@@ -1,0 +1,2 @@
+# Osinku
+OSINT tool
