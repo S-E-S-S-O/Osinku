@@ -21,3 +21,8 @@ Here the commands that osinku offer tu you:
 **4 - IP lookup**: Return to you the informations of an IP address
 
 **5 - exit**: Exit (lol)
+
+# Availability
+This is not the stable version of osinku.
+
+At the moment, osinku it's only for windows.
