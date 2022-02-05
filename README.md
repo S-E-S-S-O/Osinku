@@ -1,4 +1,4 @@
-# Osinku - 1.0
+# Osinku - v1.0 (beta)
 Osinku is an OSINT framework made by Takaso and Komodo, the name is a fusion of Senku and OSINT.
 ![image](https://user-images.githubusercontent.com/70639611/151835127-27a8eb22-feb0-41c6-93c0-cb860c12835c.png)
 
@@ -12,12 +12,12 @@ Follow this simple steps:
 # Commands
 Here the commands that osinku offer tu you:
 
-`1 - username`              || Check if the username if avaible on socials
+**1 - username**              || Check if the username if avaible on socials
 
-`2 - email`                 || Check if the email is used on various socials
+**2 - email**                 || Check if the email is used on various socials
 
-`3 - number informations`   || Return you the information of a telephone number
+**3 - number informations**   || Return you the information of a telephone number
 
-`4 - IP lookup`             || Return to you the informations of an IP address
+**4 - IP lookup**             || Return to you the informations of an IP address
 
-`5 - exit`                  || exit (lol)
+**5 - exit**                  || exit (lol)
