@@ -1,5 +1,4 @@
 # coding: utf-8
-from distutils.command.install_egg_info import install_egg_info
 from sesso.colors import *; import sys; import time; import requests
 import json    
 
