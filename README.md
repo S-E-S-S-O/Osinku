@@ -13,7 +13,11 @@ Follow this simple steps:
 Here the commands that osinku offer tu you:
 
 `1 - username`              || Check if the username if avaible on socials
+
 `2 - email`                 || Check if the email is used on various socials
+
 `3 - number informations`   || Return you the information of a telephone number
+
 `4 - IP lookup`             || Return to you the informations of an IP address
+
 `5 - exit`                  || exit (lol)
