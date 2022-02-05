@@ -10,7 +10,7 @@ Follow this simple steps:
   3) **Enjoy**: Now all it's done! To start osinku, type `python3 osinku.py`
 
 # Commands
-Here the commands that osinku offer tu you:
+Here the commands that osinku offers to you:
 
 **1 - username**              || Check if the username if avaible on socials
 
