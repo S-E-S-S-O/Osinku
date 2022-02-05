@@ -3,7 +3,7 @@ Osinku is an OSINT framework made by Takaso and Komodo, the name is a fusion of 
 
 It's just at the first version, but it's already the official 2°lens of S.E.S.S.O. Soldiers.
 
-If you want to see the first, click [here](https://github.com/komodoooo/arbtool).
+If you want to see the first, click [here](https://github.com/komodoooo/arb-tool).
 
 ![image](https://user-images.githubusercontent.com/70639611/151835127-27a8eb22-feb0-41c6-93c0-cb860c12835c.png)
 
