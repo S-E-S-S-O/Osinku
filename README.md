@@ -23,6 +23,6 @@ Here the commands that osinku offer tu you:
 **5 - exit**: Exit (lol)
 
 # Availability
-This is not the stable version of osinku.
+This is not the stable version of osinku, we will release new versions soon!
 
 At the moment, osinku it's only for windows.
