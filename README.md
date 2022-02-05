@@ -10,14 +10,14 @@ Follow this simple steps:
   3) **Enjoy**: Now all it's done! To start osinku, type `python3 osinku.py`
 
 # Commands
-Here the commands that osinku offers to you:
+Here the commands that osinku offer tu you:
 
-**1 - username**              || Check if the username if avaible on socials
+**1 - username**: Check if the username if avaible on socials
 
-**2 - email**                 || Check if the email is used on various socials
+**2 - email**: Check if the email is used on various socials
 
-**3 - number informations**   || Return you the information of a telephone number
+**3 - number informations**: Return to you the information of a telephone number
 
-**4 - IP lookup**             || Return to you the informations of an IP address
+**4 - IP lookup**: Return to you the informations of an IP address
 
-**5 - exit**                  || exit (lol)
+**5 - exit**: Exit (lol)
