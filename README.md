@@ -1,4 +1,4 @@
-# Osinku - v1.0 (beta)
+# Osinku_lib v0.0
 Osinku is an OSINT framework made by Takaso and Komodo, the name is a fusion of Senku and OSINT.
 
 It's just at the first version, but it's already the official 2°lens of S.E.S.S.O. Soldiers.
@@ -10,24 +10,25 @@ If you want to see the first, click [here](https://github.com/komodoooo/arb-tool
 # Getting Started
 Follow this simple steps:
 
-  1) **Cloning the repo:** Clone the repo with `git clone https://github.com/S-E-S-S-O/Osinku` and navigate in to the folder with `cd Osinku`.
-  2) **Requirements**: For install the necessary libraries, type on terminal: `pip install -r requirements.txt`
-  3) **Enjoy**: Now all it's done! To start osinku, type `python3 osinku.py`
+  1) **Install de library:** `curl 'https://raw.githubusercontent.com/S-E-S-S-O/osinku/osinku_lib/osinku_lib.py' > osinku_lib.py`
+  2) **Requirements**: Osinku requires only the requests module!
+  3) **Enjoy**: Now it's all done! Remember to run the cloned _osinku_lib.py_ file on the same path as your new project with osinku!
 
-# Commands
-Here the commands that osinku offer to you:
+# Examples
 
-**1 - username**: Check if the username if avaible on socials
+Here a little example of osinku:
 
-**2 - email**: Check if the email is used on various socials
+```py
+import osinku_lib
 
-**3 - number informations**: Return to you the information of a telephone number
-
-**4 - IP lookup**: Return to you the informations of an IP address
-
-**5 - exit**: Exit (lol)
+def main():
+    uwu = osinku_lib.social.instagram("fedez")
+    print(uwu)
+    
+main()
+```
 
 # Availability
-This is not the stable version of osinku, we will release new versions soon!
+This is not the stable version of osinku, we will release new versions soon! (included the stable pip package)
 
 At the moment, osinku it's only for windows.
