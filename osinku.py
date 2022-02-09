@@ -20,9 +20,9 @@ logo = """%s
 """ % (green(), reset())
 
 def intro():
-    print(logo); credits = "       Made by %sKomodo%s and %sTakaso%s." % (blue(), reset(), red(), reset())
+    print(logo); credits = "       Made by %sKomodo%s and %sTakaso%s.\n" % (blue(), reset(), red(), reset())
     for a in credits:
-        time.sleep(0.2)
+        time.sleep(0.07)
         sys.stdout.write(a)
         sys.stdout.flush()
 
@@ -44,16 +44,18 @@ class number():
         return grr.text
 
 class email():
-    def instagram(mail):
-        r = requests.post("https://instagram.com/accounts/login/ajax/", json={
-            "email": mail,
-            "password": "SCIENZAOSINKU"
-        })
-        print(r.json())         #science
-        if r.status_code == 401:
-            return None
-        else:
-            return True
+    def lookup(mail):
+        sex = requests.get(f"http://apilayer.net/api/check?access_key={oscur0['apikey']}&email={mail}") 
+        print(f"Results:\n{sex.json()}")                #we are currently working on this
+    #    r = requests.post("https://instagram.com/accounts/login/ajax/", json={
+    #        "email": mail,
+    #        "password": "SCIENZAOSINKU"
+    #    })
+    #    print(r.json())         #science
+    #    if r.status_code == 401:
+    #        return None
+    #    else:
+    #        return True
                                 #la po te n za
 class ip():
     def lookup(ip): 
@@ -101,6 +103,7 @@ General info:
 
 def eemail():
     sessomail = input("Type the email target > ")
+    email.lookup(sessomail)
 
 def indirizzo_postale_mozzie_trava_linux_programma_per_programmare_secondo_nome_del_cracker_data_di_creazione_di_discordpy_carmine_perna_trava_mozzie_skid_trava_nn_sapete_nulla_stupidi_CLOWNS_takaso_che_chiama_la_gheng_hotface():    #AHAHAHA
     look = input("Insert the ip address > ")
@@ -114,18 +117,21 @@ print("""
 5 - exit
 """)
 
-oscuro = str(input("Which type of info do you want to sex? > "))
-if oscuro == "1":
-    social_lookup()
-elif oscuro == "2":
-    eemail()
-elif oscuro == "3":
-    num()
-elif oscuro == "4":
-    indirizzo_postale_mozzie_trava_linux_programma_per_programmare_secondo_nome_del_cracker_data_di_creazione_di_discordpy_carmine_perna_trava_mozzie_skid_trava_nn_sapete_nulla_stupidi_CLOWNS_takaso_che_chiama_la_gheng_hotface()
-elif oscuro == "7":
-    exit()
-else:
-    print("Invalid option bozo")
+def negro():
+    oscuro = str(input("Which type of info do you want to sex? > "))
+    if oscuro == "1":
+        social_lookup()
+    elif oscuro == "2":
+        eemail()
+    elif oscuro == "3":
+        num()
+    elif oscuro == "4":
+        indirizzo_postale_mozzie_trava_linux_programma_per_programmare_secondo_nome_del_cracker_data_di_creazione_di_discordpy_carmine_perna_trava_mozzie_skid_trava_nn_sapete_nulla_stupidi_CLOWNS_takaso_che_chiama_la_gheng_hotface()
+    elif oscuro == "5":
+        exit()
+    else:
+        print("Invalid option bozo")
 
-input()
+while True:
+    negro()
+#input()   why?
