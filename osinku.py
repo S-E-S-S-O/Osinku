@@ -1,4 +1,5 @@
 # coding: utf-8
+import site
 from sesso.colors import *; import sys; import time; import requests
 import json    
 
@@ -6,7 +7,6 @@ with open("config.json", "r") as sesso:
     oscur0 = json.load(sesso)
 
 logo = """%s
-
      ▄██████▄     ▄████████  ▄█  ███▄▄▄▄      ▄█   ▄█▄ ███    █▄  
     ███    ███   ███    ███ ███  ███▀▀▀██▄   ███ ▄███▀ ███    ███ 
     ███    ███   ███    █▀  ███▌ ███   ███   ███▐██▀   ███    ███ 
@@ -47,16 +47,7 @@ class email():
     def lookup(mail):
         sex = requests.get(f"http://apilayer.net/api/check?access_key={oscur0['apikey']}&email={mail}") 
         print(f"Results:\n{sex.json()}")                #we are currently working on this
-    #    r = requests.post("https://instagram.com/accounts/login/ajax/", json={
-    #        "email": mail,
-    #        "password": "SCIENZAOSINKU"
-    #    })
-    #    print(r.json())         #science
-    #    if r.status_code == 401:
-    #        return None
-    #    else:
-    #        return True
-                                #la po te n za
+
 class ip():
     def lookup(ip): 
         sex_up = f"https://ipwhois.app/json/{ip}"
@@ -65,39 +56,26 @@ class ip():
 
 #muovi il cursore qui se sei gay:
 class social():
-    def github(user):
-        print("Checking username on GitHub...") #sarà per tutti i social
-        r = requests.get(f"https://github.com/{user}")
-        if r.status_code == 200: print("Username found on github!\n"); print(f"https://github.com/{user}"); return True
-    def instagram(user):
-        print("Checking username on instagram...")
-        r = requests.get(f"https://instagram.com/{user}")
-        if r.status_code == 200: print("Username found on instagram!\n"); print(f"https://instagram.com/{user}"); return True 
-        else: return False
-    def facebook(user):
-        print("Checking username on facebook...")
-        r = requests.get(f"https://facebook.com/{user}")
-        if r.status_code == 200: print("Username found o facebook!\n"); print(f"https://facebook.com/{user}"); return True
-        else: return False
-    def replit(user):
-        matteito = requests.get(f"https://replit.com/@{user}")
-        if matteito.status_code == 200: print("username found on replit!\n"); print(f"https://replit.com/@{user}")
-        else: return False
+    def lmao(user):
+        socials = [f"https://github.com/{user}",f"https://instagram.com/{user}",
+                  f"https://facebook.com/{user}", f"https://replit.com/@{user}"]
+        print("Checking username...")
+        for sites in socials:
+            r = requests.get(sites)
+            if r.status_code == 200:
+                print(f"\nUsername found on {sites} !")
+                print(sites)
+            else: 
+                return False
 
 def social_lookup():
     target = input('\nusername > ')
-    social.github(target)
-    social.instagram(target)
-    social.facebook(target)
-    social.replit(target)
-
+    social.lmao(target)
 def num():
     zioeren = input("Insert number > ")   
     print(f"""
 General info:
-
 {number.general_info(zioeren)}
-
 """)      
     print("Whatsapp: " + str(number.whatsapp(zioeren)))
 
@@ -128,6 +106,7 @@ def negro():
     elif oscuro == "4":
         indirizzo_postale_mozzie_trava_linux_programma_per_programmare_secondo_nome_del_cracker_data_di_creazione_di_discordpy_carmine_perna_trava_mozzie_skid_trava_nn_sapete_nulla_stupidi_CLOWNS_takaso_che_chiama_la_gheng_hotface()
     elif oscuro == "5":
+        print("Bye.")
         exit()
     else:
         print("Invalid option bozo")
