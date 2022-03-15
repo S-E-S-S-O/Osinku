@@ -58,7 +58,7 @@ class ip():
 class social():
     def lmao(user):
         socials = [f"https://github.com/{user}",f"https://instagram.com/{user}",
-                  f"https://facebook.com/{user}", f"https://replit.com/@{user}"]
+                  f"https://facebook.com/{user}", f"https://replit.com/@{user}", ]
         print("Checking username...")
         for sites in socials:
             r = requests.get(sites)
@@ -66,7 +66,7 @@ class social():
                 print(f"\nUsername found on {sites} !")
                 print(sites)
             else: 
-                return False
+                pass
 
 def social_lookup():
     target = input('\nusername > ')
